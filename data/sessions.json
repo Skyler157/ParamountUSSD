@@ -1,0 +1,68 @@
+{
+  "12345": {
+    "phoneNumber": "+254700000000",
+    "inputs": [],
+    "logs": [
+      "Menu shown: Welcome to Paramount Bank",
+      "Menu shown: Welcome to Paramount Bank",
+      "Menu shown: Welcome to Paramount Bank",
+      "Menu shown: Welcome to Paramount Bank",
+      "Menu shown: Welcome to Paramount Bank",
+      "Registration successful",
+      "Menu shown: Welcome to Paramount Bank",
+      "Login successful: Leah Sky",
+      "Balance checked: KES 12500",
+      "Login successful: Leah Sky",
+      "Menu shown: Welcome to Paramount Bank",
+      "User exited"
+    ]
+  },
+  "de52e41c-d6d5-416c-a71e-7dea157e36ac": {
+    "phoneNumber": "+254700000000",
+    "inputs": [],
+    "logs": []
+  },
+  "client-bf37tmn": {
+    "phoneNumber": "+254700000000",
+    "inputs": [],
+    "logs": []
+  },
+  "d097d2ed-a1a1-4bcb-8047-a6fe19b1c663": {
+    "phoneNumber": "254796886037",
+    "inputs": [],
+    "logs": [
+      "Menu shown: Welcome to Paramount Bank"
+    ]
+  },
+  "a1771fe5-760b-4be4-a161-e37fb4cf3e57": {
+    "inputs": [],
+    "logs": [
+      "Menu shown: Welcome to Paramount Bank"
+    ]
+  },
+  "4f770fe6-cb74-4eb1-897d-ba0c32ec6042": {
+    "inputs": [],
+    "logs": [
+      "Menu shown: Welcome to Paramount Bank"
+    ]
+  },
+  "4434c594-a776-49bd-bd69-7b26c27689a0": {
+    "phoneNumber": "254796886037",
+    "inputs": [],
+    "logs": [
+      "Menu shown: Main Menu"
+    ]
+  },
+  "003c3201-3239-4a92-b5ac-802ac7c377a5": {
+    "inputs": [],
+    "logs": [
+      "Menu shown: Main Menu"
+    ]
+  },
+  "7405874b-d1e6-4b61-939e-1e274c2a6df0": {
+    "inputs": [],
+    "logs": [
+      "Menu shown: Main Menu"
+    ]
+  }
+}
