@@ -1,40 +1,57 @@
-// sessionService.js
+const sessions = {};
+const SESSION_TIMEOUT_MS = 5 * 60 * 1000; // 5 minutes
 
-const sessions = {}; // in-memory store, keyed by sessionId
-
-// Get or create session
 function getSession(sessionId, phoneNumber) {
   if (!sessions[sessionId]) {
-    sessions[sessionId] = { sessionId, phoneNumber, loggedIn: false, username: null, inputs: [] };
+    sessions[sessionId] = {
+      sessionId,
+      phoneNumber,
+      loggedIn: false,
+      username: null,
+      accountNumber: null,
+      step: 0,
+      inputs: [],
+      logs: [],
+      lastActivity: Date.now()
+    };
+  } else {
+    // Reset session if expired
+    if (Date.now() - sessions[sessionId].lastActivity > SESSION_TIMEOUT_MS) {
+      sessions[sessionId] = {
+        sessionId,
+        phoneNumber,
+        loggedIn: false,
+        username: null,
+        accountNumber: null,
+        step: 0,
+        inputs: [],
+        logs: [],
+        lastActivity: Date.now()
+      };
+    }
   }
+  sessions[sessionId].lastActivity = Date.now();
   return sessions[sessionId];
 }
 
-// Get session data only
-function getSessionData(sessionId) {
-  return sessions[sessionId] || null;
-}
-
-// Update session data
-function setSessionData(sessionId, data) {
-  if (!sessions[sessionId]) sessions[sessionId] = {};
-  sessions[sessionId] = { ...sessions[sessionId], ...data };
-}
-
-// Clear session
-function clearSession(sessionId) {
-  delete sessions[sessionId];
-}
-
-// Optional: log each step
 function logStep(sessionId, message) {
-  console.log(`[Session ${sessionId}] ${message}`);
+  const timestamp = new Date().toISOString();
+  if (!sessions[sessionId]) getSession(sessionId);
+  sessions[sessionId].logs.push(`[${timestamp}] ${message}`);
+  console.log(`[${timestamp}] [Session ${sessionId}] ${message}`);
 }
 
-module.exports = {
-  getSession,
-  getSessionData,
-  setSessionData,
-  clearSession,
-  logStep
-};
+function getLogs(sessionId) {
+  return sessions[sessionId]?.logs || [];
+}
+
+function setSessionData(sessionId, data) {
+  if (!sessions[sessionId]) return;
+  Object.assign(sessions[sessionId], data);
+}
+
+function getSessionData(sessionId) {
+  return sessions[sessionId];
+}
+
+module.exports = { getSession, getSessionData, setSessionData, logStep, getLogs };

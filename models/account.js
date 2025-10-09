@@ -1,19 +1,31 @@
-let accounts = {}; // { accountNumber: { balance: 12500 } }
+const api = require('../services/paramountService');
 
-function checkBalance(account) {
-  if (!accounts[account]) accounts[account] = { balance: 12500 }; // default
-  return accounts[account].balance;
+// --- Check Balance ---
+async function checkBalance(accountNumber) {
+  try {
+    const response = await api.post('/api/elmacore/bankwebservice/checkbalance', {
+      accountNumber,
+    });
+    return response.data;
+  } catch (error) {
+    console.error(`[${new Date().toISOString()}] Error checking balance:`, error.response?.data || error.message);
+    throw error;
+  }
 }
 
-function transferMoney(sender, recipient, amount) {
-  if (!accounts[sender]) accounts[sender] = { balance: 12500 };
-  if (!accounts[recipient]) accounts[recipient] = { balance: 0 };
-
-  if (accounts[sender].balance < amount) return false;
-
-  accounts[sender].balance -= amount;
-  accounts[recipient].balance += amount;
-  return true;
+// --- Transfer Money ---
+async function transferMoney(senderAccount, recipientAccount, amount) {
+  try {
+    const response = await api.post('/api/elmacore/bankwebservice/transfer', {
+      senderAccount,
+      recipientAccount,
+      amount,
+    });
+    return response.data;
+  } catch (error) {
+    console.error(`[${new Date().toISOString()}] Error transferring money:`, error.response?.data || error.message);
+    throw error;
+  }
 }
 
 module.exports = { checkBalance, transferMoney };

@@ -110,35 +110,45 @@
   </div>
 
   <script>
-  let started = false;
+    let started = false;
+    let sessionId = 'sess-' + Math.floor(Math.random() * 1000000); 
 
-  async function sendInput() {
-    const inputEl = document.getElementById('input');
-    const output = document.getElementById('output');
+    async function sendInput() {
+      const inputEl = document.getElementById('input');
+      const output = document.getElementById('output');
 
-    let textToSend = inputEl.value;
+      let inputToSend = inputEl.value;
 
-    // First send → ignore input, force empty string so backend shows menu
-    if (!started) {
-      textToSend = '';
-      started = true;
+      if (!started) {
+        inputToSend = '';
+        started = true;
+      }
+
+      try {
+        const response = await fetch('http://172.17.50.13:4000/paramountUSSD', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            sessionId,
+            phoneNumber: '+254700000000',
+            input: inputToSend
+          })
+        });
+
+        const text = await response.text();
+        output.textContent = text;
+        output.scrollTop = output.scrollHeight; 
+        inputEl.value = '';
+      } catch (err) {
+        output.textContent = 'Error connecting to backend. Please check your server.';
+        console.error(err);
+      }
     }
 
-    const response = await fetch('http://172.17.50.13:4000/paramountUSSD', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: new URLSearchParams({
-        sessionId: '12345',
-        phoneNumber: '+254700000000',
-        text: textToSend
-      })
+    // Send input on Enter key
+    document.getElementById('input').addEventListener('keypress', function(e) {
+      if (e.key === 'Enter') sendInput();
     });
-
-    const text = await response.text();
-    output.textContent = text;
-    inputEl.value = '';
-  }
-</script>
-
+  </script>
 </body>
 </html>

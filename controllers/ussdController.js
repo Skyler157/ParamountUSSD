@@ -2,18 +2,16 @@ const { getSession } = require('../services/sessionService');
 const { handleMenu } = require('../services/menuService');
 
 exports.handleUssd = async (req, res) => {
-
   const body = req.body || {};
-  let { sessionId, serviceCode, phoneNumber, text } = body;
+  let { sessionId, serviceCode, phoneNumber, input } = body;
 
+  if (typeof input === 'undefined' || input === null) input = '';
 
-  if (typeof text === 'undefined' || text === null) text = '';
-
-
+  // Get or create session
   const session = getSession(sessionId, phoneNumber);
 
-
-  const response = await handleMenu(session.sessionId, text);
+  // Call menu handler
+  const response = await handleMenu(session.sessionId, input);
 
   res.set('Content-Type', 'text/plain');
   res.send(response);

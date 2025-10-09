@@ -1,0 +1,32 @@
+[
+  {
+    "sessionId": "765432",
+    "message": "Menu shown: Welcome to Paramount Bank",
+    "timestamp": "2025-10-07T07:46:26.142Z"
+  },
+  {
+    "sessionId": "765432",
+    "message": "Menu shown: Welcome to Paramount Bank",
+    "timestamp": "2025-10-07T07:46:36.812Z"
+  },
+  {
+    "sessionId": "765432",
+    "message": "Menu shown: Welcome to Paramount Bank",
+    "timestamp": "2025-10-07T07:46:45.200Z"
+  },
+  {
+    "sessionId": "765432",
+    "message": "Menu shown: Welcome to Paramount Bank",
+    "timestamp": "2025-10-07T07:46:55.397Z"
+  },
+  {
+    "sessionId": "76543234",
+    "message": "Menu shown: Welcome to Paramount Bank",
+    "timestamp": "2025-10-07T07:47:06.388Z"
+  },
+  {
+    "sessionId": "76543234",
+    "message": "Menu shown: Welcome to Paramount Bank",
+    "timestamp": "2025-10-07T07:47:13.244Z"
+  }
+]

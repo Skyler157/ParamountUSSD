@@ -1,0 +1,68 @@
+{
+  "2345679": {
+    "sessionId": "2345679",
+    "phoneNumber": "+254110271723",
+    "loggedIn": false,
+    "username": null,
+    "accountNumber": null,
+    "step": 0,
+    "inputs": [],
+    "logs": [],
+    "lastActivity": 1759820686442
+  },
+  "sess-177155": {
+    "sessionId": "sess-177155",
+    "phoneNumber": "+254700000000",
+    "loggedIn": false,
+    "username": null,
+    "accountNumber": null,
+    "step": 11,
+    "inputs": [
+      "",
+      "2",
+      "",
+      "",
+      "",
+      "",
+      "1",
+      ""
+    ],
+    "logs": [
+      "[2025-10-07T07:04:12.354Z] Menu shown: Welcome to Paramount Bank",
+      "[2025-10-07T07:04:17.620Z] Menu shown: Welcome to Paramount Bank",
+      "[2025-10-07T07:04:23.232Z] Menu shown: Welcome to Paramount Bank"
+    ],
+    "lastActivity": 1759820671144,
+    "tempName": ""
+  },
+  "sess-706037": {
+    "sessionId": "sess-706037",
+    "phoneNumber": "+254700000000",
+    "loggedIn": false,
+    "username": null,
+    "accountNumber": null,
+    "step": 0,
+    "inputs": [],
+    "logs": [],
+    "lastActivity": 1759820674582
+  },
+  "sess-501558": {
+    "sessionId": "sess-501558",
+    "phoneNumber": "+254700000000",
+    "loggedIn": false,
+    "username": null,
+    "accountNumber": null,
+    "step": 1,
+    "inputs": [
+      "",
+      "",
+      "2"
+    ],
+    "logs": [
+      "[2025-10-07T07:12:04.603Z] Menu shown: Welcome to Paramount Bank",
+      "[2025-10-07T07:12:18.118Z] Menu shown: Welcome to Paramount Bank",
+      "[2025-10-07T07:12:23.326Z] Menu shown: Welcome to Paramount Bank"
+    ],
+    "lastActivity": 1759821143811
+  }
+}
