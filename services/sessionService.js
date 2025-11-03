@@ -1,10 +1,10 @@
 const fs = require("fs");
 const path = require("path");
+const logger = require('../utils/logger');
 
 const SESSION_FILE = path.join(__dirname, "..", "sessions.json");
 const SESSION_TIMEOUT_MS = 5 * 60 * 1000; // 5 minutes
 
-// Load sessions from file or initialize empty object
 let sessions = {};
 try {
   if (fs.existsSync(SESSION_FILE)) {
@@ -12,28 +12,22 @@ try {
     sessions = JSON.parse(data);
   }
 } catch (err) {
-  console.error("Failed to load sessions.json:", err);
-  sessions = {};
+  logger.error("Failed to load sessions.json: " + err.message);
 }
 
-// Utility: Save sessions to file
 function saveSessions() {
   try {
     fs.writeFileSync(SESSION_FILE, JSON.stringify(sessions, null, 2), "utf8");
   } catch (err) {
-    console.error("Failed to save sessions:", err);
+    logger.error("Failed to save sessions: " + err.message);
   }
 }
 
-// Utility: human-readable timestamp
 function getReadableTimestamp() {
   const now = new Date();
-  const date = now.toISOString().split("T")[0];
-  const time = now.toTimeString().split(" ")[0];
-  return `${date} ${time}`;
+  return `${now.toISOString().split("T")[0]} ${now.toTimeString().split(" ")[0]}`;
 }
 
-// Initialize or refresh session
 function getSession(sessionId, phoneNumber) {
   const now = Date.now();
 
@@ -49,21 +43,20 @@ function getSession(sessionId, phoneNumber) {
       logs: [],
       lastActivity: now
     };
-  } else {
-    // Reset if expired
-    if (now - sessions[sessionId].lastActivity > SESSION_TIMEOUT_MS) {
-      sessions[sessionId] = {
-        sessionId,
-        phoneNumber,
-        loggedIn: false,
-        username: null,
-        accountNumber: null,
-        step: 0,
-        inputs: [],
-        logs: [],
-        lastActivity: now
-      };
-    }
+    logger.info(`[Session Created] sessionId=${sessionId} phone=${phoneNumber}`);
+  } else if (now - sessions[sessionId].lastActivity > SESSION_TIMEOUT_MS) {
+    sessions[sessionId] = {
+      sessionId,
+      phoneNumber,
+      loggedIn: false,
+      username: null,
+      accountNumber: null,
+      step: 0,
+      inputs: [],
+      logs: [],
+      lastActivity: now
+    };
+    logger.info(`[Session Reset] sessionId=${sessionId}`);
   }
 
   sessions[sessionId].lastActivity = now;
@@ -71,12 +64,13 @@ function getSession(sessionId, phoneNumber) {
   return sessions[sessionId];
 }
 
-function logStep(sessionId, message) {
+function logStep(sessionId, message, redactInput = false) {
   const timestamp = getReadableTimestamp();
   if (!sessions[sessionId]) getSession(sessionId);
-  const logEntry = `[${timestamp}] ${message}`;
+  const safeMessage = redactInput ? message.replace(/([0-9]{4,})/g, '***') : message; // Redact PINs, codes
+  const logEntry = `[${timestamp}] ${safeMessage}`;
   sessions[sessionId].logs.push(logEntry);
-  console.log(`[Session ${sessionId}] ${logEntry}`);
+  logger.info(`[Session ${sessionId}] ${safeMessage}`);
   saveSessions();
 }
 

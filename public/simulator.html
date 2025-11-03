@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,7 +21,7 @@
       height: 600px;
       background: #111;
       border-radius: 40px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
       display: flex;
       flex-direction: column;
       overflow: hidden;
@@ -96,6 +97,7 @@
     }
   </style>
 </head>
+
 <body>
   <div class="phone">
     <div class="screen">
@@ -111,7 +113,7 @@
 
   <script>
     let started = false;
-    let sessionId = 'sess-' + Math.floor(Math.random() * 1000000); 
+    let sessionId = 'sess-' + Math.floor(Math.random() * 1000000);
 
     async function sendInput() {
       const inputEl = document.getElementById('input');
@@ -136,8 +138,12 @@
         });
 
         const text = await response.text();
-        output.textContent = text;
-        output.scrollTop = output.scrollHeight; 
+
+        // Strip CON/END
+        const cleanText = text.replace(/^CON\s+/i, '').replace(/^END\s+/i, '');
+
+        output.textContent = cleanText;
+        output.scrollTop = output.scrollHeight;
         inputEl.value = '';
       } catch (err) {
         output.textContent = 'Error connecting to backend. Please check your server.';
@@ -146,9 +152,11 @@
     }
 
     // Send input on Enter key
-    document.getElementById('input').addEventListener('keypress', function(e) {
+    document.getElementById('input').addEventListener('keypress', function (e) {
       if (e.key === 'Enter') sendInput();
     });
   </script>
+
 </body>
+
 </html>

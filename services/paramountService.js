@@ -1,5 +1,6 @@
 require('dotenv').config();
 const httpClient = require('../httpClient');
+const logger = require('../utils/logger');
 
 const BASE_HEADERS = {
   'Content-Type': 'application/json',
@@ -13,56 +14,53 @@ const ROUTES = {
   validate: process.env.PARAMOUNT_VALIDATE_URL,
 };
 
-// Authenticate user
+function redactSensitive(payload) {
+  const copy = JSON.parse(JSON.stringify(payload));
+  if (copy.EncryptedFields?.PIN) copy.EncryptedFields.PIN = '***';
+  if (copy.EncryptedFields?.KEY) copy.EncryptedFields.KEY = '***';
+  return copy;
+}
+
 async function authenticateUser(payload) {
   try {
-    console.log('Auth payload', payload);
-    const res = await httpClient.post(ROUTES.auth, payload, {
-      headers: BASE_HEADERS
-    });
-    console.log('Auth success', res.data);
+    console.log('[Auth] payload:', JSON.stringify(redactSensitive(payload)));
+    const res = await httpClient.post(ROUTES.auth, payload, { headers: BASE_HEADERS });
+    console.log('[Auth] response:', JSON.stringify(res.data));
     return res.data;
   } catch (err) {
-    console.error('Auth error:', err.message);
+    console.error('[Auth] error:', err.message);
     return null;
   }
 }
 
-// Check account balance 
 async function getBalance(payload) {
   try {
-    const res = await httpClient.post(ROUTES.bank, payload, {
-      headers: BASE_HEADERS
-    });
+    const res = await httpClient.post(ROUTES.bank, payload, { headers: BASE_HEADERS });
     return res.data;
   } catch (err) {
-    console.error('Bank error:', err.message);
+    logger.error(`[Bank] error: ${err.message}`);
     return null;
   }
 }
 
-// Validate bill or transfer
 async function validateTransaction(payload) {
   try {
-    const res = await httpClient.post(ROUTES.validate, payload, {
-      headers: BASE_HEADERS
-    });
+    const res = await httpClient.post(ROUTES.validate, payload, { headers: BASE_HEADERS });
     return res.data;
   } catch (err) {
-    console.error('Validate error:', err.message);
+    logger.error(`[Validate] error: ${err.message}`);
     return null;
   }
 }
 
-// Purchase or pay bill
 async function makePurchase(payload) {
   try {
-    const res = await httpClient.post(ROUTES.purchase, payload, {
-      headers: BASE_HEADERS
-    });
+    logger.info(`[Purchase] payload: ${JSON.stringify(redactSensitive(payload))}`);
+    const res = await httpClient.post(ROUTES.purchase, payload, { headers: BASE_HEADERS });
+    logger.info(`[Purchase] response: ${JSON.stringify(res.data)}`);
     return res.data;
   } catch (err) {
-    console.error('Purchase error:', err.message);
+    logger.error(`[Purchase] error: ${err.message}`);
     return null;
   }
 }
@@ -71,5 +69,5 @@ module.exports = {
   authenticateUser,
   getBalance,
   validateTransaction,
-  makePurchase,
+  makePurchase
 };

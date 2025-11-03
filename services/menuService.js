@@ -12,6 +12,9 @@ async function handleMenu(sessionId, input) {
   session.inputs.push(input);
   let response = '';
 
+  const sensitiveSteps = [12,13,14,22,53,55,64,91,92];
+  logStep(sessionId, `Step ${session.step} input=${input}`, sensitiveSteps.includes(session.step));
+
   switch (session.step) {
 
     // Welcome
@@ -68,8 +71,8 @@ async function handleMenu(sessionId, input) {
           BankID: "50",
           MobileNumber: "254705285825",
           trxSource: "USSD",
-          IMEI: "dummyIMEI",
-          IMSI: "dummyIMSI",
+          IMEI: "JOeHs0RckvS/5tSPZI7s14vVzFhbMu9rRkmgTs3K+Fg=",
+          IMSI: "JOeHs0RckvS/5tSPZI7s14vVzFhbMu9rRkmgTs3K+Fg=",
           UNIQUEID: crypto.randomUUID(),
           VersionNumber: "4.0",
           APPNAME: "PARAMOUNT",
@@ -101,8 +104,8 @@ async function handleMenu(sessionId, input) {
         MobileNumber: "254705285825",
         CustomerID: "2001234567",
         trxSource: "USSD",
-        IMEI: "dummyIMEI",
-        IMSI: "dummyIMSI",
+        IMEI: "JOeHs0RckvS/5tSPZI7s14vVzFhbMu9rRkmgTs3K+Fg=",
+        IMSI: "JOeHs0RckvS/5tSPZI7s14vVzFhbMu9rRkmgTs3K+Fg=",
         UNIQUEID: crypto.randomUUID(),
         VersionNumber: "4.0",
         APPNAME: "PARAMOUNT",

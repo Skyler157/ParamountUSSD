@@ -1,0 +1,494 @@
+[2025-10-31 16:28:33] [INFO] [Incoming] sessionId=sess-123375 phone=+254705285825 input=
+[2025-10-31 16:28:33] [INFO] [Session Created] sessionId=sess-123375 phone=+254705285825
+[2025-10-31 16:28:33] [INFO] [Session sess-123375] Step 0 input=
+[2025-10-31 16:28:33] [INFO] [Session sess-123375] Menu shown: Welcome to Paramount Bank
+[2025-10-31 16:28:33] [INFO] [Response] sessionId=sess-123375 response="CON Welcome to Paramount Bank:
+1. Register
+2. Login
+00. Exit"
+[2025-10-31 16:28:35] [INFO] [Incoming] sessionId=sess-123375 phone=+254705285825 input=2
+[2025-10-31 16:28:35] [INFO] [Session sess-123375] Step 1 input=2
+[2025-10-31 16:28:35] [INFO] [Response] sessionId=sess-123375 response="CON Enter your PIN:"
+[2025-10-31 16:28:38] [INFO] [Incoming] sessionId=sess-123375 phone=+254705285825 input=***
+[2025-10-31 16:28:38] [INFO] [Session sess-123375] Step 22 input=***
+[2025-10-31 16:28:39] [INFO] [Session sess-123375] Login successful: Peter Kiprotich
+[2025-10-31 16:28:39] [INFO] [Response] sessionId=sess-123375 response="CON Welcome Peter Kiprotich!
+1. My Account
+2. Airtime
+3. Funds Transfer
+4. Pay Merchant
+5. Change PIN
+00. Exit"
+[2025-10-31 16:28:41] [INFO] [Incoming] sessionId=sess-123375 phone=+254705285825 input=1
+[2025-10-31 16:28:41] [INFO] [Session sess-123375] Step 30 input=1
+[2025-10-31 16:28:41] [INFO] [Response] sessionId=sess-123375 response="CON My Account:
+1. Balance
+2. Mini Statement
+0. Back"
+[2025-10-31 16:28:43] [INFO] [Incoming] sessionId=sess-123375 phone=+254705285825 input=2
+[2025-10-31 16:28:43] [INFO] [Session sess-123375] Step 31 input=2
+[2025-10-31 16:28:44] [INFO] [Response] sessionId=sess-123375 response="CON Mini Statement:
+Opening Balance  | Debit: 0 | Credit: 0 | Balance: 84870
+TRANSFER For Batch :32840 | Debit: 0 | Credit: 100 | Balance: 84970
+TRANSFER For Batch :32845 | Debit: 0 | Credit: 100 | Balance: 85070
+TRANSFER For Batch :32844 | Debit: 0 | Credit: 100 | Balance: 85170
+TRANSFER For Batch :32852 | Debit: 0 | Credit: 100 | Balance: 85270
+TRANSFER For Batch :32853 | Debit: 0 | Credit: 1000 | Balance: 86270
+Closing Balance  | Debit: 0 | Credit: 0 | Balance: 86270
+Current Available Balance..."
+[2025-10-31 16:35:18] [INFO] [Incoming] sessionId=cron-session phone=+254705285825 input=
+[2025-10-31 16:35:18] [INFO] [Session Created] sessionId=cron-session phone=+254705285825
+[2025-10-31 16:35:18] [INFO] [Session cron-session] Step 0 input=
+[2025-10-31 16:35:18] [INFO] [Session cron-session] Menu shown: Welcome to Paramount Bank
+[2025-10-31 16:35:18] [INFO] [Response] sessionId=cron-session response="CON Welcome to Paramount Bank:
+1. Register
+2. Login
+00. Exit"
+[2025-10-31 16:35:23] [INFO] [Incoming] sessionId=cron-session phone=+254705285825 input=
+[2025-10-31 16:35:23] [INFO] [Session cron-session] Step 1 input=
+[2025-10-31 16:35:23] [INFO] [Response] sessionId=cron-session response="CON Invalid input. Please choose 1, 2, or 00:"
+[2025-10-31 16:35:29] [INFO] [Incoming] sessionId=cron-session phone=+254705285825 input=
+[2025-10-31 16:35:29] [INFO] [Session cron-session] Step 1 input=
+[2025-10-31 16:35:29] [INFO] [Response] sessionId=cron-session response="CON Invalid input. Please choose 1, 2, or 00:"
+[2025-10-31 16:35:35] [INFO] [Incoming] sessionId=cron-session phone=+254705285825 input=
+[2025-10-31 16:35:35] [INFO] [Session cron-session] Step 1 input=
+[2025-10-31 16:35:35] [INFO] [Response] sessionId=cron-session response="CON Invalid input. Please choose 1, 2, or 00:"
+[2025-10-31 16:35:41] [INFO] [Incoming] sessionId=cron-session phone=+254705285825 input=
+[2025-10-31 16:35:41] [INFO] [Session cron-session] Step 1 input=
+[2025-10-31 16:35:41] [INFO] [Response] sessionId=cron-session response="CON Invalid input. Please choose 1, 2, or 00:"
+[2025-10-31 16:35:47] [INFO] [Incoming] sessionId=cron-session phone=+254705285825 input=
+[2025-10-31 16:35:47] [INFO] [Session cron-session] Step 1 input=
+[2025-10-31 16:35:47] [INFO] [Response] sessionId=cron-session response="CON Invalid input. Please choose 1, 2, or 00:"
+[2025-10-31 16:35:52] [INFO] [Incoming] sessionId=cron-session phone=+254705285825 input=
+[2025-10-31 16:35:52] [INFO] [Session cron-session] Step 1 input=
+[2025-10-31 16:35:52] [INFO] [Response] sessionId=cron-session response="CON Invalid input. Please choose 1, 2, or 00:"
+[2025-10-31 16:35:58] [INFO] [Incoming] sessionId=cron-session phone=+254705285825 input=
+[2025-10-31 16:35:58] [INFO] [Session cron-session] Step 1 input=
+[2025-10-31 16:35:58] [INFO] [Response] sessionId=cron-session response="CON Invalid input. Please choose 1, 2, or 00:"
+[2025-10-31 16:36:03] [INFO] [Incoming] sessionId=cron-session phone=+254705285825 input=
+[2025-10-31 16:36:03] [INFO] [Session cron-session] Step 1 input=
+[2025-10-31 16:36:03] [INFO] [Response] sessionId=cron-session response="CON Invalid input. Please choose 1, 2, or 00:"
+[2025-10-31 16:36:09] [INFO] [Incoming] sessionId=cron-session phone=+254705285825 input=
+[2025-10-31 16:36:09] [INFO] [Session cron-session] Step 1 input=
+[2025-10-31 16:36:09] [INFO] [Response] sessionId=cron-session response="CON Invalid input. Please choose 1, 2, or 00:"
+[2025-10-31 16:36:15] [INFO] [Incoming] sessionId=cron-session phone=+254705285825 input=
+[2025-10-31 16:36:15] [INFO] [Session cron-session] Step 1 input=
+[2025-10-31 16:36:15] [INFO] [Response] sessionId=cron-session response="CON Invalid input. Please choose 1, 2, or 00:"
+[2025-10-31 16:36:20] [INFO] [Incoming] sessionId=cron-session phone=+254705285825 input=
+[2025-10-31 16:36:20] [INFO] [Session cron-session] Step 1 input=
+[2025-10-31 16:36:20] [INFO] [Response] sessionId=cron-session response="CON Invalid input. Please choose 1, 2, or 00:"
+[2025-10-31 16:36:25] [INFO] [Incoming] sessionId=cron-session phone=+254705285825 input=
+[2025-10-31 16:36:25] [INFO] [Session cron-session] Step 1 input=
+[2025-10-31 16:36:25] [INFO] [Response] sessionId=cron-session response="CON Invalid input. Please choose 1, 2, or 00:"
+[2025-10-31 16:36:30] [INFO] [Incoming] sessionId=cron-session phone=+254705285825 input=
+[2025-10-31 16:36:30] [INFO] [Session cron-session] Step 1 input=
+[2025-10-31 16:36:30] [INFO] [Response] sessionId=cron-session response="CON Invalid input. Please choose 1, 2, or 00:"
+[2025-10-31 16:37:15] [INFO] [Incoming] sessionId=cron-session phone=+254705285825 input=
+[2025-10-31 16:37:15] [INFO] [Session cron-session] Step 1 input=
+[2025-10-31 16:37:15] [INFO] [Response] sessionId=cron-session response="CON Invalid input. Please choose 1, 2, or 00:"
+[2025-10-31 16:39:24] [INFO] [Incoming] sessionId=cron-session phone=+254705285825 input=
+[2025-10-31 16:39:24] [INFO] [Session cron-session] Step 1 input=
+[2025-10-31 16:39:24] [INFO] [Response] sessionId=cron-session response="CON Invalid input. Please choose 1, 2, or 00:"
+[2025-10-31 16:39:41] [INFO] [Incoming] sessionId=sess-84481 phone=+254705285825 input=
+[2025-10-31 16:39:41] [INFO] [Session Created] sessionId=sess-84481 phone=+254705285825
+[2025-10-31 16:39:41] [INFO] [Session sess-84481] Step 0 input=
+[2025-10-31 16:39:41] [INFO] [Session sess-84481] Menu shown: Welcome to Paramount Bank
+[2025-10-31 16:39:41] [INFO] [Response] sessionId=sess-84481 response="CON Welcome to Paramount Bank:
+1. Register
+2. Login
+00. Exit"
+[2025-10-31 16:39:42] [INFO] [Incoming] sessionId=sess-84481 phone=+254705285825 input=2
+[2025-10-31 16:39:42] [INFO] [Session sess-84481] Step 1 input=2
+[2025-10-31 16:39:42] [INFO] [Response] sessionId=sess-84481 response="CON Enter your PIN:"
+[2025-10-31 16:39:47] [INFO] [Incoming] sessionId=sess-84481 phone=+254705285825 input=***
+[2025-10-31 16:39:47] [INFO] [Session sess-84481] Step 22 input=***
+[2025-10-31 16:39:47] [INFO] [Session sess-84481] Login successful: Peter Kiprotich
+[2025-10-31 16:39:47] [INFO] [Response] sessionId=sess-84481 response="CON Welcome Peter Kiprotich!
+1. My Account
+2. Airtime
+3. Funds Transfer
+4. Pay Merchant
+5. Change PIN
+00. Exit"
+[2025-10-31 16:39:50] [INFO] [Incoming] sessionId=sess-84481 phone=+254705285825 input=1
+[2025-10-31 16:39:50] [INFO] [Session sess-84481] Step 30 input=1
+[2025-10-31 16:39:50] [INFO] [Response] sessionId=sess-84481 response="CON My Account:
+1. Balance
+2. Mini Statement
+0. Back"
+[2025-10-31 16:39:52] [INFO] [Incoming] sessionId=sess-84481 phone=+254705285825 input=2
+[2025-10-31 16:39:52] [INFO] [Session sess-84481] Step 31 input=2
+[2025-10-31 16:39:53] [INFO] [Response] sessionId=sess-84481 response="CON Mini Statement:
+Opening Balance  | Debit: 0 | Credit: 0 | Balance: 84870
+TRANSFER For Batch :32840 | Debit: 0 | Credit: 100 | Balance: 84970
+TRANSFER For Batch :32845 | Debit: 0 | Credit: 100 | Balance: 85070
+TRANSFER For Batch :32844 | Debit: 0 | Credit: 100 | Balance: 85170
+TRANSFER For Batch :32852 | Debit: 0 | Credit: 100 | Balance: 85270
+TRANSFER For Batch :32853 | Debit: 0 | Credit: 1000 | Balance: 86270
+Closing Balance  | Debit: 0 | Credit: 0 | Balance: 86270
+Current Available Balance..."
+[2025-10-31 16:40:00] [INFO] [Incoming] sessionId=cron-session phone=+254705285825 input=
+[2025-10-31 16:40:00] [INFO] [Session cron-session] Step 1 input=
+[2025-10-31 16:40:00] [INFO] [Response] sessionId=cron-session response="CON Invalid input. Please choose 1, 2, or 00:"
+[2025-10-31 16:46:26] [INFO] [Incoming] sessionId=sess-950327 phone=+254705285825 input=
+[2025-10-31 16:46:26] [INFO] [Session Created] sessionId=sess-950327 phone=+254705285825
+[2025-10-31 16:46:26] [INFO] [Session sess-950327] Step 0 input=
+[2025-10-31 16:46:26] [INFO] [Session sess-950327] Menu shown: Welcome to Paramount Bank
+[2025-10-31 16:46:26] [INFO] [Response] sessionId=sess-950327 response="CON Welcome to Paramount Bank:
+1. Register
+2. Login
+00. Exit"
+[2025-10-31 16:46:27] [INFO] [Incoming] sessionId=sess-950327 phone=+254705285825 input=2
+[2025-10-31 16:46:27] [INFO] [Session sess-950327] Step 1 input=2
+[2025-10-31 16:46:27] [INFO] [Response] sessionId=sess-950327 response="CON Enter your PIN:"
+[2025-10-31 16:46:31] [INFO] [Incoming] sessionId=sess-950327 phone=+254705285825 input=***
+[2025-10-31 16:46:31] [INFO] [Session sess-950327] Step 22 input=***
+[2025-10-31 16:46:32] [INFO] [Session sess-950327] Login successful: Peter Kiprotich
+[2025-10-31 16:46:32] [INFO] [Response] sessionId=sess-950327 response="CON Welcome Peter Kiprotich!
+1. My Account
+2. Airtime
+3. Funds Transfer
+4. Pay Merchant
+5. Change PIN
+00. Exit"
+[2025-10-31 16:46:34] [INFO] [Incoming] sessionId=sess-950327 phone=+254705285825 input=1
+[2025-10-31 16:46:34] [INFO] [Session sess-950327] Step 30 input=1
+[2025-10-31 16:46:34] [INFO] [Response] sessionId=sess-950327 response="CON My Account:
+1. Balance
+2. Mini Statement
+0. Back"
+[2025-10-31 16:46:37] [INFO] [Incoming] sessionId=sess-950327 phone=+254705285825 input=2
+[2025-10-31 16:46:37] [INFO] [Session sess-950327] Step 31 input=2
+[2025-10-31 16:46:37] [INFO] [Response] sessionId=sess-950327 response="CON Mini Statement:
+Opening Balance  | Debit: 0 | Credit: 0 | Balance: 84870
+TRANSFER For Batch :32840 | Debit: 0 | Credit: 100 | Balance: 84970
+TRANSFER For Batch :32845 | Debit: 0 | Credit: 100 | Balance: 85070
+TRANSFER For Batch :32844 | Debit: 0 | Credit: 100 | Balance: 85170
+TRANSFER For Batch :32852 | Debit: 0 | Credit: 100 | Balance: 85270
+TRANSFER For Batch :32853 | Debit: 0 | Credit: 1000 | Balance: 86270
+Closing Balance  | Debit: 0 | Credit: 0 | Balance: 86270
+Current Available Balance..."
+[2025-10-31 16:46:54] [INFO] [Incoming] sessionId=sess-950327 phone=+254705285825 input=0
+[2025-10-31 16:46:54] [INFO] [Session sess-950327] Step 31 input=0
+[2025-10-31 16:46:54] [INFO] [Response] sessionId=sess-950327 response="CON Welcome Peter Kiprotich!
+1. My Account
+2. Airtime
+3. Funds Transfer
+4. Pay Merchant
+5. Change PIN
+00. Exit"
+[2025-10-31 16:46:57] [INFO] [Incoming] sessionId=sess-950327 phone=+254705285825 input=2
+[2025-10-31 16:46:57] [INFO] [Session sess-950327] Step 30 input=2
+[2025-10-31 16:46:57] [INFO] [Response] sessionId=sess-950327 response="CON Airtime:
+1. Buy for own number
+2. Buy for other number
+0. Back"
+[2025-10-31 16:46:59] [INFO] [Incoming] sessionId=sess-950327 phone=+254705285825 input=1
+[2025-10-31 16:46:59] [INFO] [Session sess-950327] Step 50 input=1
+[2025-10-31 16:46:59] [INFO] [Response] sessionId=sess-950327 response="CON Enter amount:"
+[2025-10-31 16:47:01] [INFO] [Incoming] sessionId=sess-950327 phone=+254705285825 input=100
+[2025-10-31 16:47:01] [INFO] [Session sess-950327] Step 51 input=100
+[2025-10-31 16:47:01] [INFO] [Response] sessionId=sess-950327 response="CON Enter PIN:"
+[2025-10-31 16:47:05] [INFO] [Incoming] sessionId=sess-950327 phone=+254705285825 input=***
+[2025-10-31 16:47:05] [INFO] [Session sess-950327] Step 53 input=***
+[2025-10-31 16:47:05] [INFO] [Purchase] payload: {"FormID":"PAYBILL","UNIQUEID":"bf91329c-2a21-47ff-8138-35e7083a5835","SessionID":"sess-950327","CustomerID":"2001234567","BankID":"50","Country":"KENYATEST","VersionNumber":"225","IMEI":"678A8C34F8A352F1D8C916E7C27019DA","IMSI":"678A8C34F8A352F1D8C916E7C27019DA","TRXSOURCE":"APP","APPNAME":"PARAMOUNT","CODEBASE":"ANDROID","LATLON":"-1.2647723,36.7633848","ModuleID":"SAFARICOM","MerchantID":"CSSAFCOMKE","PayBill":{"ACCOUNTID":"254705285825","AMOUNT":100,"BANKACCOUNTID":"010001100001","MerchantID":"CSSAFCOMKE"},"EncryptedFields":{"PIN":"***"}}
+[2025-10-31 16:47:06] [INFO] [Purchase] response: {"status":"091","message":"Unable to process request try again later","customerID":"2001234567","bankID":"50","country":"KENYATEST","bankAccountID":"010001100001","accountBalance":null,"availableBalance":null,"accountType":"","currency":"KES","inquiryDate":"2025-10-31 16:47:04","uniqueID":"bf91329c-2a21-47ff-8138-35e7083a5835"}
+[2025-10-31 16:47:06] [INFO] [Response] sessionId=sess-950327 response="CON Failed. Press 0 to go back."
+[2025-10-31 16:50:00] [INFO] [Incoming] sessionId=cron-session phone=+254705285825 input=
+[2025-10-31 16:50:00] [INFO] [Session Reset] sessionId=cron-session
+[2025-10-31 16:50:00] [INFO] [Session cron-session] Step 0 input=
+[2025-10-31 16:50:00] [INFO] [Session cron-session] Menu shown: Welcome to Paramount Bank
+[2025-10-31 16:50:00] [INFO] [Response] sessionId=cron-session response="CON Welcome to Paramount Bank:
+1. Register
+2. Login
+00. Exit"
+[2025-10-31 16:51:41] [INFO] [Incoming] sessionId=sess-950327 phone=+254705285825 input=
+[2025-10-31 16:51:41] [INFO] [Session sess-950327] Step 50 input=
+[2025-10-31 16:51:41] [INFO] [Response] sessionId=sess-950327 response="CON Invalid. 1. Own, 2. Other, 0. Back"
+[2025-10-31 16:51:53] [INFO] [Incoming] sessionId=sess-950327 phone=+254705285825 input=0
+[2025-10-31 16:51:53] [INFO] [Session sess-950327] Step 50 input=0
+[2025-10-31 16:51:53] [INFO] [Response] sessionId=sess-950327 response="CON Welcome Peter Kiprotich!
+1. My Account
+2. Airtime
+3. Funds Transfer
+4. Pay Merchant
+5. Change PIN
+00. Exit"
+[2025-10-31 16:51:55] [INFO] [Incoming] sessionId=sess-950327 phone=+254705285825 input=90
+[2025-10-31 16:51:55] [INFO] [Session sess-950327] Step 30 input=90
+[2025-10-31 16:51:56] [INFO] [Response] sessionId=sess-950327 response="CON Invalid input. Please choose an option from the menu:"
+[2025-10-31 16:52:01] [INFO] [Incoming] sessionId=sess-950327 phone=+254705285825 input=0
+[2025-10-31 16:52:01] [INFO] [Session sess-950327] Step 30 input=0
+[2025-10-31 16:52:01] [INFO] [Response] sessionId=sess-950327 response="CON Invalid input. Please choose an option from the menu:"
+[2025-10-31 16:52:07] [INFO] [Incoming] sessionId=sess-420739 phone=+254705285825 input=
+[2025-10-31 16:52:07] [INFO] [Session Created] sessionId=sess-420739 phone=+254705285825
+[2025-10-31 16:52:07] [INFO] [Session sess-420739] Step 0 input=
+[2025-10-31 16:52:07] [INFO] [Session sess-420739] Menu shown: Welcome to Paramount Bank
+[2025-10-31 16:52:07] [INFO] [Response] sessionId=sess-420739 response="CON Welcome to Paramount Bank:
+1. Register
+2. Login
+00. Exit"
+[2025-10-31 16:52:09] [INFO] [Incoming] sessionId=sess-420739 phone=+254705285825 input=9
+[2025-10-31 16:52:09] [INFO] [Session sess-420739] Step 1 input=9
+[2025-10-31 16:52:09] [INFO] [Response] sessionId=sess-420739 response="CON Invalid input. Please choose 1, 2, or 00:"
+[2025-10-31 16:52:13] [INFO] [Incoming] sessionId=sess-420739 phone=+254705285825 input=2
+[2025-10-31 16:52:13] [INFO] [Session sess-420739] Step 1 input=2
+[2025-10-31 16:52:13] [INFO] [Response] sessionId=sess-420739 response="CON Enter your PIN:"
+[2025-10-31 16:52:15] [INFO] [Incoming] sessionId=sess-420739 phone=+254705285825 input=***
+[2025-10-31 16:52:15] [INFO] [Session sess-420739] Step 22 input=***
+[2025-10-31 16:52:16] [INFO] [Session sess-420739] Login successful: Peter Kiprotich
+[2025-10-31 16:52:16] [INFO] [Response] sessionId=sess-420739 response="CON Welcome Peter Kiprotich!
+1. My Account
+2. Airtime
+3. Funds Transfer
+4. Pay Merchant
+5. Change PIN
+00. Exit"
+[2025-10-31 16:52:21] [INFO] [Incoming] sessionId=sess-420739 phone=+254705285825 input=1
+[2025-10-31 16:52:21] [INFO] [Session sess-420739] Step 30 input=1
+[2025-10-31 16:52:21] [INFO] [Response] sessionId=sess-420739 response="CON My Account:
+1. Balance
+2. Mini Statement
+0. Back"
+[2025-10-31 16:52:27] [INFO] [Incoming] sessionId=sess-420739 phone=+254705285825 input=0
+[2025-10-31 16:52:27] [INFO] [Session sess-420739] Step 31 input=0
+[2025-10-31 16:52:27] [INFO] [Response] sessionId=sess-420739 response="CON Welcome Peter Kiprotich!
+1. My Account
+2. Airtime
+3. Funds Transfer
+4. Pay Merchant
+5. Change PIN
+00. Exit"
+[2025-10-31 16:52:48] [INFO] [Incoming] sessionId=sess-420739 phone=+254705285825 input=1
+[2025-10-31 16:52:48] [INFO] [Session sess-420739] Step 30 input=1
+[2025-10-31 16:52:48] [INFO] [Response] sessionId=sess-420739 response="CON My Account:
+1. Balance
+2. Mini Statement
+0. Back"
+[2025-10-31 16:52:51] [INFO] [Incoming] sessionId=sess-420739 phone=+254705285825 input=1
+[2025-10-31 16:52:51] [INFO] [Session sess-420739] Step 31 input=1
+[2025-10-31 16:53:03] [INFO] [Incoming] sessionId=sess-420739 phone=+254705285825 input=
+[2025-10-31 16:53:03] [INFO] [Session sess-420739] Step 31 input=
+[2025-10-31 16:53:04] [INFO] [Response] sessionId=sess-420739 response="CON Mini Statement:
+Opening Balance  | Debit: 0 | Credit: 0 | Balance: 84870
+TRANSFER For Batch :32840 | Debit: 0 | Credit: 100 | Balance: 84970
+TRANSFER For Batch :32845 | Debit: 0 | Credit: 100 | Balance: 85070
+TRANSFER For Batch :32844 | Debit: 0 | Credit: 100 | Balance: 85170
+TRANSFER For Batch :32852 | Debit: 0 | Credit: 100 | Balance: 85270
+TRANSFER For Batch :32853 | Debit: 0 | Credit: 1000 | Balance: 86270
+Closing Balance  | Debit: 0 | Credit: 0 | Balance: 86270
+Current Available Balance..."
+[2025-10-31 16:53:09] [INFO] [Incoming] sessionId=sess-420739 phone=+254705285825 input=0
+[2025-10-31 16:53:09] [INFO] [Session sess-420739] Step 31 input=0
+[2025-10-31 16:53:09] [INFO] [Response] sessionId=sess-420739 response="CON Welcome Peter Kiprotich!
+1. My Account
+2. Airtime
+3. Funds Transfer
+4. Pay Merchant
+5. Change PIN
+00. Exit"
+[2025-10-31 16:53:29] [INFO] [Incoming] sessionId=sess-420739 phone=+254705285825 input=4
+[2025-10-31 16:53:29] [INFO] [Session sess-420739] Step 30 input=4
+[2025-10-31 16:53:29] [INFO] [Response] sessionId=sess-420739 response="CON Enter merchant code:"
+[2025-10-31 16:53:35] [INFO] [Incoming] sessionId=sess-420739 phone=+254705285825 input=0
+[2025-10-31 16:53:35] [INFO] [Session sess-420739] Step 80 input=0
+[2025-10-31 16:53:35] [INFO] [Response] sessionId=sess-420739 response="CON Welcome Peter Kiprotich!
+1. My Account
+2. Airtime
+3. Funds Transfer
+4. Pay Merchant
+5. Change PIN
+00. Exit"
+[2025-10-31 16:55:43] [INFO] [Incoming] sessionId=sess-242091 phone=+254705285825 input=
+[2025-10-31 16:55:43] [INFO] [Session Created] sessionId=sess-242091 phone=+254705285825
+[2025-10-31 16:55:43] [INFO] [Session sess-242091] Step 0 input=
+[2025-10-31 16:55:43] [INFO] [Session sess-242091] Menu shown: Welcome to Paramount Bank
+[2025-10-31 16:55:43] [INFO] [Response] sessionId=sess-242091 response="CON Welcome to Paramount Bank:
+1. Register
+2. Login
+00. Exit"
+[2025-10-31 16:55:50] [INFO] [Incoming] sessionId=sess-242091 phone=+254705285825 input=1
+[2025-10-31 16:55:50] [INFO] [Session sess-242091] Step 1 input=1
+[2025-10-31 16:55:50] [INFO] [Response] sessionId=sess-242091 response="CON Enter your full name:"
+[2025-10-31 16:55:56] [INFO] [Incoming] sessionId=sess-242091 phone=+254705285825 input=Peter
+[2025-10-31 16:55:56] [INFO] [Session sess-242091] Step 10 input=Peter
+[2025-10-31 16:55:56] [INFO] [Response] sessionId=sess-242091 response="CON Enter your mobile number:"
+[2025-10-31 16:56:15] [INFO] [Incoming] sessionId=sess-242091 phone=+254705285825 input=1234567890
+[2025-10-31 16:56:15] [INFO] [Session sess-242091] Step 11 input=1234567890
+[2025-10-31 16:56:15] [INFO] [Response] sessionId=sess-242091 response="CON Create a 4-digit PIN:"
+[2025-10-31 16:56:22] [INFO] [Incoming] sessionId=sess-242091 phone=+254705285825 input=***
+[2025-10-31 16:56:22] [INFO] [Session sess-242091] Step 12 input=***
+[2025-10-31 16:56:22] [INFO] [Response] sessionId=sess-242091 response="CON Confirm your PIN:"
+[2025-10-31 16:56:29] [INFO] [Incoming] sessionId=sess-242091 phone=+254705285825 input=***
+[2025-10-31 16:56:29] [INFO] [Session sess-242091] Step 13 input=***
+[2025-10-31 16:56:29] [INFO] [Session sess-242091] Activation code sent to 1234567890
+[2025-10-31 16:56:29] [INFO] [Response] sessionId=sess-242091 response="CON Activation code sent to your mobile. Enter the 6-digit code:"
+[2025-10-31 17:00:00] [INFO] [Incoming] sessionId=cron-session phone=+254705285825 input=
+[2025-10-31 17:00:00] [INFO] [Session Reset] sessionId=cron-session
+[2025-10-31 17:00:00] [INFO] [Session cron-session] Step 0 input=
+[2025-10-31 17:00:00] [INFO] [Session cron-session] Menu shown: Welcome to Paramount Bank
+[2025-10-31 17:00:00] [INFO] [Response] sessionId=cron-session response="CON Welcome to Paramount Bank:
+1. Register
+2. Login
+00. Exit"
+[2025-10-31 17:07:15] [INFO] [Incoming] sessionId=sess-224257 phone=+254705285825 input=
+[2025-10-31 17:07:15] [INFO] [Session Created] sessionId=sess-224257 phone=+254705285825
+[2025-10-31 17:07:15] [INFO] [Session sess-224257] Step 0 input=
+[2025-10-31 17:07:15] [INFO] [Session sess-224257] Menu shown: Welcome to Paramount Bank
+[2025-10-31 17:07:15] [INFO] [Response] sessionId=sess-224257 response="CON Welcome to Paramount Bank:
+1. Register
+2. Login
+00. Exit"
+[2025-10-31 17:07:17] [INFO] [Incoming] sessionId=sess-224257 phone=+254705285825 input=2
+[2025-10-31 17:07:17] [INFO] [Session sess-224257] Step 1 input=2
+[2025-10-31 17:07:17] [INFO] [Response] sessionId=sess-224257 response="CON Enter your PIN:"
+[2025-10-31 17:07:22] [INFO] [Incoming] sessionId=sess-224257 phone=+254705285825 input=***
+[2025-10-31 17:07:22] [INFO] [Session sess-224257] Step 22 input=***
+[2025-10-31 17:07:22] [INFO] [Session sess-224257] Login successful: Peter Kiprotich
+[2025-10-31 17:07:22] [INFO] [Response] sessionId=sess-224257 response="CON Welcome Peter Kiprotich!
+1. My Account
+2. Airtime
+3. Funds Transfer
+4. Pay Merchant
+5. Change PIN
+00. Exit"
+[2025-10-31 17:07:27] [INFO] [Incoming] sessionId=sess-224257 phone=+254705285825 input=1
+[2025-10-31 17:07:27] [INFO] [Session sess-224257] Step 30 input=1
+[2025-10-31 17:07:27] [INFO] [Response] sessionId=sess-224257 response="CON My Account:
+1. Balance
+2. Mini Statement
+0. Back"
+[2025-10-31 17:07:28] [INFO] [Incoming] sessionId=sess-224257 phone=+254705285825 input=1
+[2025-10-31 17:07:28] [INFO] [Session sess-224257] Step 31 input=1
+[2025-10-31 17:07:28] [ERROR] [Error] sessionId=sess-224257 ReferenceError: CustomerID is not defined
+    at handleMenu (C:\Users\leah.gitau\Desktop\paramountUSSD\services\menuService.js:247:11)
+    at exports.handleUssd (C:\Users\leah.gitau\Desktop\paramountUSSD\controllers\ussdController.js:18:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-10-31 17:10:00] [INFO] [Incoming] sessionId=cron-session phone=+254705285825 input=
+[2025-10-31 17:10:00] [INFO] [Session Reset] sessionId=cron-session
+[2025-10-31 17:10:00] [INFO] [Session cron-session] Step 0 input=
+[2025-10-31 17:10:00] [INFO] [Session cron-session] Menu shown: Welcome to Paramount Bank
+[2025-10-31 17:10:00] [INFO] [Response] sessionId=cron-session response="CON Welcome to Paramount Bank:
+1. Register
+2. Login
+00. Exit"
+[2025-10-31 17:20:00] [INFO] [Incoming] sessionId=cron-session phone=+254705285825 input=
+[2025-10-31 17:20:00] [INFO] [Session Reset] sessionId=cron-session
+[2025-10-31 17:20:00] [INFO] [Session cron-session] Step 0 input=
+[2025-10-31 17:20:00] [INFO] [Session cron-session] Menu shown: Welcome to Paramount Bank
+[2025-10-31 17:20:00] [INFO] [Response] sessionId=cron-session response="CON Welcome to Paramount Bank:
+1. Register
+2. Login
+00. Exit"
+[2025-10-31 17:20:33] [INFO] [Incoming] sessionId=sess-592344 phone=+254705285825 input=
+[2025-10-31 17:20:33] [INFO] [Session Created] sessionId=sess-592344 phone=+254705285825
+[2025-10-31 17:20:33] [INFO] [Session sess-592344] Step 0 input=
+[2025-10-31 17:20:33] [INFO] [Session sess-592344] Menu shown: Welcome to Paramount Bank
+[2025-10-31 17:20:33] [INFO] [Response] sessionId=sess-592344 response="CON Welcome to Paramount Bank:
+1. Register
+2. Login
+00. Exit"
+[2025-10-31 17:20:34] [INFO] [Incoming] sessionId=sess-592344 phone=+254705285825 input=2
+[2025-10-31 17:20:34] [INFO] [Session sess-592344] Step 1 input=2
+[2025-10-31 17:20:34] [INFO] [Response] sessionId=sess-592344 response="CON Enter your PIN:"
+[2025-10-31 17:20:37] [INFO] [Incoming] sessionId=sess-592344 phone=+254705285825 input=***
+[2025-10-31 17:20:37] [INFO] [Session sess-592344] Step 22 input=***
+[2025-10-31 17:20:38] [INFO] [Session sess-592344] Login successful: Peter Kiprotich
+[2025-10-31 17:20:38] [INFO] [Response] sessionId=sess-592344 response="CON Welcome Peter Kiprotich!
+1. My Account
+2. Airtime
+3. Funds Transfer
+4. Pay Merchant
+5. Change PIN
+00. Exit"
+[2025-10-31 17:20:40] [INFO] [Incoming] sessionId=sess-592344 phone=+254705285825 input=1
+[2025-10-31 17:20:42] [INFO] [Incoming] sessionId=sess-592344 phone=+254705285825 input=1
+[2025-10-31 17:20:42] [INFO] [Session sess-592344] Step 31 input=1
+[2025-10-31 17:20:50] [INFO] [Incoming] sessionId=sess-592344 phone=+254705285825 input=1
+[2025-10-31 17:20:50] [INFO] [Session sess-592344] Step 31 input=1
+[2025-10-31 17:20:50] [INFO] [Response] sessionId=sess-592344 response="CON Could not retrieve account info. Press 0 to go back."
+[2025-10-31 17:21:07] [INFO] [Incoming] sessionId=sess-813173 phone=+254705285825 input=
+[2025-10-31 17:21:07] [INFO] [Session Created] sessionId=sess-813173 phone=+254705285825
+[2025-10-31 17:21:07] [INFO] [Session sess-813173] Step 0 input=
+[2025-10-31 17:21:07] [INFO] [Session sess-813173] Menu shown: Welcome to Paramount Bank
+[2025-10-31 17:21:07] [INFO] [Response] sessionId=sess-813173 response="CON Welcome to Paramount Bank:
+1. Register
+2. Login
+00. Exit"
+[2025-10-31 17:21:08] [INFO] [Incoming] sessionId=sess-813173 phone=+254705285825 input=2
+[2025-10-31 17:21:08] [INFO] [Session sess-813173] Step 1 input=2
+[2025-10-31 17:21:08] [INFO] [Response] sessionId=sess-813173 response="CON Enter your PIN:"
+[2025-10-31 17:21:11] [INFO] [Incoming] sessionId=sess-813173 phone=+254705285825 input=***
+[2025-10-31 17:21:11] [INFO] [Session sess-813173] Step 22 input=***
+[2025-10-31 17:21:12] [INFO] [Session sess-813173] Login successful: Peter Kiprotich
+[2025-10-31 17:21:12] [INFO] [Response] sessionId=sess-813173 response="CON Welcome Peter Kiprotich!
+1. My Account
+2. Airtime
+3. Funds Transfer
+4. Pay Merchant
+5. Change PIN
+00. Exit"
+[2025-10-31 17:21:13] [INFO] [Incoming] sessionId=sess-813173 phone=+254705285825 input=1
+[2025-10-31 17:21:13] [INFO] [Session sess-813173] Step 30 input=1
+[2025-10-31 17:21:13] [INFO] [Response] sessionId=sess-813173 response="CON My Account:
+1. Balance
+2. Mini Statement
+0. Back"
+[2025-10-31 17:21:16] [INFO] [Incoming] sessionId=sess-813173 phone=+254705285825 input=2
+[2025-10-31 17:21:16] [INFO] [Session sess-813173] Step 31 input=2
+[2025-10-31 17:21:17] [INFO] [Response] sessionId=sess-813173 response="CON Mini Statement:
+Opening Balance  | Debit: 0 | Credit: 0 | Balance: 84870
+TRANSFER For Batch :32840 | Debit: 0 | Credit: 100 | Balance: 84970
+TRANSFER For Batch :32845 | Debit: 0 | Credit: 100 | Balance: 85070
+TRANSFER For Batch :32844 | Debit: 0 | Credit: 100 | Balance: 85170
+TRANSFER For Batch :32852 | Debit: 0 | Credit: 100 | Balance: 85270
+TRANSFER For Batch :32853 | Debit: 0 | Credit: 1000 | Balance: 86270
+Closing Balance  | Debit: 0 | Credit: 0 | Balance: 86270
+Current Available Balance..."
+[2025-10-31 17:21:18] [INFO] [Incoming] sessionId=sess-813173 phone=+254705285825 input=0
+[2025-10-31 17:21:18] [INFO] [Session sess-813173] Step 31 input=0
+[2025-10-31 17:21:19] [INFO] [Response] sessionId=sess-813173 response="CON Welcome Peter Kiprotich!
+1. My Account
+2. Airtime
+3. Funds Transfer
+4. Pay Merchant
+5. Change PIN
+00. Exit"
+[2025-10-31 17:21:21] [INFO] [Incoming] sessionId=sess-813173 phone=+254705285825 input=1
+[2025-10-31 17:21:21] [INFO] [Session sess-813173] Step 30 input=1
+[2025-10-31 17:21:21] [INFO] [Response] sessionId=sess-813173 response="CON My Account:
+1. Balance
+2. Mini Statement
+0. Back"
+[2025-10-31 17:21:27] [INFO] [Incoming] sessionId=sess-813173 phone=+254705285825 input=1
+[2025-10-31 17:21:27] [INFO] [Session sess-813173] Step 31 input=1
+[2025-10-31 17:21:27] [INFO] [Response] sessionId=sess-813173 response="CON Balance: 17203.2 KES
+Available: -4039706403.28 KES
+0. Back"
+[2025-10-31 17:30:03] [INFO] [Incoming] sessionId=cron-session phone=+254705285825 input=
+[2025-10-31 17:30:03] [INFO] [Session Reset] sessionId=cron-session
+[2025-10-31 17:30:03] [INFO] [Session cron-session] Step 0 input=
+[2025-10-31 17:30:03] [INFO] [Session cron-session] Menu shown: Welcome to Paramount Bank
+[2025-10-31 17:30:03] [INFO] [Response] sessionId=cron-session response="CON Welcome to Paramount Bank:
+1. Register
+2. Login
+00. Exit"
+[2025-10-31 17:40:00] [INFO] [Incoming] sessionId=cron-session phone=+254705285825 input=
+[2025-10-31 17:40:00] [INFO] [Session Reset] sessionId=cron-session
+[2025-10-31 17:40:00] [INFO] [Session cron-session] Step 0 input=
+[2025-10-31 17:40:00] [INFO] [Session cron-session] Menu shown: Welcome to Paramount Bank
+[2025-10-31 17:40:00] [INFO] [Response] sessionId=cron-session response="CON Welcome to Paramount Bank:
+1. Register
+2. Login
+00. Exit"
+[2025-11-03 08:47:26] [INFO] [Incoming] sessionId=cron-session phone=+254705285825 input=
+[2025-11-03 08:47:26] [INFO] [Session Reset] sessionId=cron-session
+[2025-11-03 08:47:26] [INFO] [Session cron-session] Step 0 input=
+[2025-11-03 08:47:26] [INFO] [Session cron-session] Menu shown: Welcome to Paramount Bank
+[2025-11-03 08:47:26] [INFO] [Response] sessionId=cron-session response="CON Welcome to Paramount Bank:
+1. Register
+2. Login
+00. Exit"
+[2025-11-03 08:50:04] [INFO] [Incoming] sessionId=cron-session phone=+254705285825 input=
+[2025-11-03 08:50:04] [INFO] [Session cron-session] Step 1 input=
+[2025-11-03 08:50:04] [INFO] [Response] sessionId=cron-session response="CON Invalid input. Please choose 1, 2, or 00:"
